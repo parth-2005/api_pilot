@@ -6,6 +6,10 @@ on:
       - 'v*.*.*'        # only run on version tags like v1.0.1
   workflow_dispatch:    # allow manual runs if you need
 
+permissions:
+    contents: write
+    id-token: write
+
 jobs:
   android:
     name: 📱 Build Android APK
